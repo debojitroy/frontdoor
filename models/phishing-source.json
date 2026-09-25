@@ -1,0 +1,7 @@
+{
+  "dataset": "darkknight25/phishing_benign_email_dataset",
+  "revision": "8a0e4433b22b31690cc24443f17d2b2afec9dea9",
+  "sha256": "fbc5158d5308c376012a427c7a11d9a2616c6f9b569364d0e5bb085c62b0ff16",
+  "license": "MIT (as declared by dataset card)",
+  "source": "https://huggingface.co/datasets/darkknight25/phishing_benign_email_dataset"
+}

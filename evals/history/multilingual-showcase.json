@@ -1,0 +1,878 @@
+[
+  {
+    "id": "D01",
+    "expected": "legitimate",
+    "prediction": {
+      "spam": {
+        "choice": "clean",
+        "positive_probability": 0.2277,
+        "probabilities": {
+          "clean": 0.7723,
+          "spam": 0.2277
+        }
+      },
+      "phishing": {
+        "choice": "legitimate",
+        "positive_probability": 0.0077,
+        "probabilities": {
+          "legitimate": 0.9923,
+          "phishing": 0.0077
+        }
+      },
+      "verdict": "legitimate",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "clean",
+            "probabilities": {
+              "clean": 0.7723,
+              "spam": 0.2277
+            },
+            "confidence": 0.226,
+            "answer_confidence": 0.7723,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "legitimate",
+            "probabilities": {
+              "legitimate": 0.9923,
+              "phishing": 0.0077
+            },
+            "confidence": 0.9348,
+            "answer_confidence": 0.9923,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 269,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 551.501,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D02",
+    "expected": "phishing",
+    "prediction": {
+      "spam": {
+        "choice": "clean",
+        "positive_probability": 0.0123,
+        "probabilities": {
+          "clean": 0.9877,
+          "spam": 0.0123
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 0.7928,
+        "probabilities": {
+          "legitimate": 0.2072,
+          "phishing": 0.7928
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "clean",
+            "probabilities": {
+              "clean": 0.9877,
+              "spam": 0.0123
+            },
+            "confidence": 0.9044,
+            "answer_confidence": 0.9877,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.2072,
+              "phishing": 0.7928
+            },
+            "confidence": 0.264,
+            "answer_confidence": 0.7928,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 277,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 31.149,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D03",
+    "expected": "spam",
+    "prediction": {
+      "spam": {
+        "choice": "spam",
+        "positive_probability": 1.0,
+        "probabilities": {
+          "clean": 0.0,
+          "spam": 1.0
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 1.0,
+        "probabilities": {
+          "legitimate": 0.0,
+          "phishing": 1.0
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "spam",
+            "probabilities": {
+              "clean": 0.0,
+              "spam": 1.0
+            },
+            "confidence": 1.0,
+            "answer_confidence": 1.0,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.0,
+              "phishing": 1.0
+            },
+            "confidence": 1.0,
+            "answer_confidence": 1.0,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 279,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 29.0,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D04",
+    "expected": "legitimate",
+    "prediction": {
+      "spam": {
+        "choice": "clean",
+        "positive_probability": 0.0592,
+        "probabilities": {
+          "clean": 0.9408,
+          "spam": 0.0592
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 0.5407,
+        "probabilities": {
+          "legitimate": 0.4593,
+          "phishing": 0.5407
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "clean",
+            "probabilities": {
+              "clean": 0.9408,
+              "spam": 0.0592
+            },
+            "confidence": 0.6756,
+            "answer_confidence": 0.9408,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.4593,
+              "phishing": 0.5407
+            },
+            "confidence": 0.0048,
+            "answer_confidence": 0.5407,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 265,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 29.617,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D05",
+    "expected": "phishing",
+    "prediction": {
+      "spam": {
+        "choice": "spam",
+        "positive_probability": 0.8652,
+        "probabilities": {
+          "clean": 0.1348,
+          "spam": 0.8652
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 0.9849,
+        "probabilities": {
+          "legitimate": 0.0151,
+          "phishing": 0.9849
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "spam",
+            "probabilities": {
+              "clean": 0.1348,
+              "spam": 0.8652
+            },
+            "confidence": 0.4295,
+            "answer_confidence": 0.8652,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.0151,
+              "phishing": 0.9849
+            },
+            "confidence": 0.8871,
+            "answer_confidence": 0.9849,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 273,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 31.374,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D06",
+    "expected": "spam",
+    "prediction": {
+      "spam": {
+        "choice": "spam",
+        "positive_probability": 0.9958,
+        "probabilities": {
+          "clean": 0.0042,
+          "spam": 0.9958
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 0.9923,
+        "probabilities": {
+          "legitimate": 0.0077,
+          "phishing": 0.9923
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "spam",
+            "probabilities": {
+              "clean": 0.0042,
+              "spam": 0.9958
+            },
+            "confidence": 0.9611,
+            "answer_confidence": 0.9958,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.0077,
+              "phishing": 0.9923
+            },
+            "confidence": 0.9346,
+            "answer_confidence": 0.9923,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 263,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 28.58,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D07",
+    "expected": "legitimate",
+    "prediction": {
+      "spam": {
+        "choice": "clean",
+        "positive_probability": 0.3088,
+        "probabilities": {
+          "clean": 0.6912,
+          "spam": 0.3088
+        }
+      },
+      "phishing": {
+        "choice": "legitimate",
+        "positive_probability": 0.0577,
+        "probabilities": {
+          "legitimate": 0.9423,
+          "phishing": 0.0577
+        }
+      },
+      "verdict": "legitimate",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "clean",
+            "probabilities": {
+              "clean": 0.6912,
+              "spam": 0.3088
+            },
+            "confidence": 0.1082,
+            "answer_confidence": 0.6912,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "legitimate",
+            "probabilities": {
+              "legitimate": 0.9423,
+              "phishing": 0.0577
+            },
+            "confidence": 0.6819,
+            "answer_confidence": 0.9423,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 275,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 29.308,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D08",
+    "expected": "phishing",
+    "prediction": {
+      "spam": {
+        "choice": "spam",
+        "positive_probability": 0.7614,
+        "probabilities": {
+          "clean": 0.2386,
+          "spam": 0.7614
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 0.9406,
+        "probabilities": {
+          "legitimate": 0.0594,
+          "phishing": 0.9406
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "spam",
+            "probabilities": {
+              "clean": 0.2386,
+              "spam": 0.7614
+            },
+            "confidence": 0.2072,
+            "answer_confidence": 0.7614,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.0594,
+              "phishing": 0.9406
+            },
+            "confidence": 0.6748,
+            "answer_confidence": 0.9406,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 283,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 29.497,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D09",
+    "expected": "legitimate",
+    "prediction": {
+      "spam": {
+        "choice": "clean",
+        "positive_probability": 0.0515,
+        "probabilities": {
+          "clean": 0.9485,
+          "spam": 0.0515
+        }
+      },
+      "phishing": {
+        "choice": "legitimate",
+        "positive_probability": 0.1733,
+        "probabilities": {
+          "legitimate": 0.8267,
+          "phishing": 0.1733
+        }
+      },
+      "verdict": "legitimate",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "clean",
+            "probabilities": {
+              "clean": 0.9485,
+              "spam": 0.0515
+            },
+            "confidence": 0.7074,
+            "answer_confidence": 0.9485,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "legitimate",
+            "probabilities": {
+              "legitimate": 0.8267,
+              "phishing": 0.1733
+            },
+            "confidence": 0.3348,
+            "answer_confidence": 0.8267,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 259,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 28.494,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D10",
+    "expected": "spam",
+    "prediction": {
+      "spam": {
+        "choice": "spam",
+        "positive_probability": 0.8692,
+        "probabilities": {
+          "clean": 0.1308,
+          "spam": 0.8692
+        }
+      },
+      "phishing": {
+        "choice": "legitimate",
+        "positive_probability": 0.4845,
+        "probabilities": {
+          "legitimate": 0.5155,
+          "phishing": 0.4845
+        }
+      },
+      "verdict": "spam",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "spam",
+            "probabilities": {
+              "clean": 0.1308,
+              "spam": 0.8692
+            },
+            "confidence": 0.4403,
+            "answer_confidence": 0.8692,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "legitimate",
+            "probabilities": {
+              "legitimate": 0.5155,
+              "phishing": 0.4845
+            },
+            "confidence": 0.0007,
+            "answer_confidence": 0.5155,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 281,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 28.667,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D11",
+    "expected": "phishing",
+    "prediction": {
+      "spam": {
+        "choice": "clean",
+        "positive_probability": 0.4431,
+        "probabilities": {
+          "clean": 0.5569,
+          "spam": 0.4431
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 0.9991,
+        "probabilities": {
+          "legitimate": 0.0009,
+          "phishing": 0.9991
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "clean",
+            "probabilities": {
+              "clean": 0.5569,
+              "spam": 0.4431
+            },
+            "confidence": 0.0094,
+            "answer_confidence": 0.5569,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.0009,
+              "phishing": 0.9991
+            },
+            "confidence": 0.9893,
+            "answer_confidence": 0.9991,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 287,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 28.332,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  },
+  {
+    "id": "D12",
+    "expected": "legitimate",
+    "prediction": {
+      "spam": {
+        "choice": "clean",
+        "positive_probability": 0.2335,
+        "probabilities": {
+          "clean": 0.7665,
+          "spam": 0.2335
+        }
+      },
+      "phishing": {
+        "choice": "phishing",
+        "positive_probability": 0.7926,
+        "probabilities": {
+          "legitimate": 0.2074,
+          "phishing": 0.7926
+        }
+      },
+      "verdict": "phishing",
+      "route": "review"
+    },
+    "raw": {
+      "result": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "spam": {
+            "type": "choice",
+            "choice": "clean",
+            "probabilities": {
+              "clean": 0.7665,
+              "spam": 0.2335
+            },
+            "confidence": 0.2159,
+            "answer_confidence": 0.7665,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "phishing": {
+            "type": "choice",
+            "choice": "phishing",
+            "probabilities": {
+              "legitimate": 0.2074,
+              "phishing": 0.7926
+            },
+            "confidence": 0.2636,
+            "answer_confidence": 0.7926,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 269,
+          "output_tokens": 0
+        }
+      },
+      "model_ms": 29.124,
+      "metadata": {
+        "model_repo": "convaiinnovations/laya-multilingual",
+        "model_revision": "e4e9ddf21a7b1903b7acffd8814ad4307bf63a67",
+        "laya_version": "0.3.20",
+        "torch_version": "2.12.1+cu130",
+        "transformers_version": "5.12.1",
+        "device": "cuda",
+        "hardware": "Tesla T4",
+        "max_len": 1024,
+        "head_max_len": 256
+      }
+    }
+  }
+]

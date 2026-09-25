@@ -1,0 +1,16 @@
+{
+  "source": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+  "attribution": "Almeida, T. and Hidalgo, J. (2012). SMS Spam Collection. UCI Machine Learning Repository. https://doi.org/10.24432/C5CC84",
+  "license": "CC BY 4.0; https://creativecommons.org/licenses/by/4.0/",
+  "source_archive_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "records": 5572,
+  "train": 3984,
+  "validation": 525,
+  "test": 200,
+  "train_hash": "60431561f583fe5bfadadc3bdf240b2134b7724e8d99e9dfb33942a8da35ce3a",
+  "validation_hash": "b43ab4fbc2f6b0bdbc0be699db3b361c7d0f97addf03920c76e6284de3467713",
+  "test_hash": "4e7a0cff26ad4c1eb97b33e42c95bea06a0edc18241848f812362ce798b97d09",
+  "challenge_hash": "6d7fdcc9c1aa79f32a607a1d8997504a5b1a23f242ddb07fe0fda256a4222619",
+  "demo_hash": "a566d50d030d6c8827ca730415f6e1c517e6707facbeb89c89b14714546d299c",
+  "limits": "Normalized duplicate groups do not cross splits; semantic campaign overlap may remain. Training overlap with Laya is unknown. Only SMS spam is labeled, not phishing."
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "D01",
+    "group": "D-scenario-01",
+    "expected": "legitimate",
+    "message": {
+      "channel": "email",
+      "sender": "Maya · Acme Studio",
+      "subject": "Tuesday's design review",
+      "body": "I've attached the revised wireframes. Can we move our review to 2pm? The navigation changes are ready for your feedback.",
+      "context": "Maya is a colleague on your current project."
+    }
+  },
+  {
+    "id": "D02",
+    "group": "D-scenario-02",
+    "expected": "phishing",
+    "message": {
+      "channel": "email",
+      "sender": "Workspace security",
+      "subject": "Your session needs attention",
+      "body": "We detected an unusual sign-in. Reply with the six digits from your authenticator so our team can keep your workspace active.",
+      "context": "You did not contact support. The message asks you to share an authentication secret."
+    }
+  },
+  {
+    "id": "D03",
+    "group": "D-scenario-03",
+    "expected": "spam",
+    "message": {
+      "channel": "contact form",
+      "sender": "Growth Partners",
+      "subject": "An opportunity for your website",
+      "body": "We can place your business on the first page of search results in seven days. Thousands of backlinks, just $49. Reply YES for our special package.",
+      "context": "An unsolicited sales pitch sent through your support form."
+    }
+  },
+  {
+    "id": "D04",
+    "group": "D-scenario-04",
+    "expected": "legitimate",
+    "message": {
+      "channel": "email",
+      "sender": "Identity team",
+      "subject": "Protecting your account",
+      "body": "Never share your password or login code with anyone, including our staff. If you need help, open the app and use the support menu.",
+      "context": "A security-awareness notice from your employer."
+    }
+  },
+  {
+    "id": "D05",
+    "group": "D-scenario-05",
+    "expected": "phishing",
+    "message": {
+      "channel": "community",
+      "sender": "Project administrator",
+      "subject": "Contributor reward",
+      "body": "You have been selected for a contributor bonus. Open https://rewards.example/claim and enter your wallet recovery words to connect your reward account.",
+      "context": "An unsolicited direct message. Recovery words give access to your funds."
+    }
+  },
+  {
+    "id": "D06",
+    "group": "D-scenario-06",
+    "expected": "spam",
+    "message": {
+      "channel": "community",
+      "sender": "Revenue Builder",
+      "subject": "Make your spare hours pay",
+      "body": "Join our private earnings club. No skills needed: recruit three friends and receive guaranteed daily payouts. Membership closes tonight.",
+      "context": "Posted repeatedly by an unknown account in unrelated discussion channels."
+    }
+  },
+  {
+    "id": "D07",
+    "group": "D-scenario-07",
+    "expected": "legitimate",
+    "message": {
+      "channel": "contact form",
+      "sender": "Elena · North Works",
+      "subject": "Pricing for a small team",
+      "body": "We're evaluating your product for a team of twelve. Do you support annual billing and single sign-on? Could you send us your pricing?",
+      "context": "A new customer asking about the service you sell."
+    }
+  },
+  {
+    "id": "D08",
+    "group": "D-scenario-08",
+    "expected": "phishing",
+    "message": {
+      "channel": "email",
+      "sender": "Finance leadership",
+      "subject": "A quick favor before my flight",
+      "body": "I'm boarding now and can't take calls. Purchase five gift cards and send me photos of the scratched panels. Keep this between us until I return.",
+      "context": "An unexpected request claiming to be from your manager."
+    }
+  },
+  {
+    "id": "D09",
+    "group": "D-scenario-09",
+    "expected": "legitimate",
+    "message": {
+      "channel": "email",
+      "sender": "Events team",
+      "subject": "Your free workshop ticket",
+      "body": "You're registered for Thursday's free accessibility workshop. Your seat is confirmed; the joining details are in your attendee portal.",
+      "context": "You registered for this workshop yesterday."
+    }
+  },
+  {
+    "id": "D10",
+    "group": "D-scenario-10",
+    "expected": "spam",
+    "message": {
+      "channel": "email",
+      "sender": "Wholesale outreach",
+      "subject": "A special offer just for you",
+      "body": "Buy now and unlock a lifetime 90% discount on our productivity bundle. This limited offer has been sent to a select list of business owners.",
+      "context": "You have no relationship with the sender and did not subscribe."
+    }
+  },
+  {
+    "id": "D11",
+    "group": "D-scenario-11",
+    "expected": "phishing",
+    "message": {
+      "channel": "contact form",
+      "sender": "Delivery claims",
+      "subject": "Small customs balance",
+      "body": "Your parcel is waiting. Pay the release charge at https://parcel-payment.example and provide your card number, expiry and security code within one hour.",
+      "context": "You are not expecting a parcel. The form submission claims to be a delivery service."
+    }
+  },
+  {
+    "id": "D12",
+    "group": "D-scenario-12",
+    "expected": "legitimate",
+    "message": {
+      "channel": "community",
+      "sender": "Sam · Maintainer",
+      "subject": "Suspicious message reported",
+      "body": "Someone sent me a message asking for gift card codes. I've reported the account. Please don't respond to it or send any money.",
+      "context": "A member warning others about an attempted scam."
+    }
+  }
+]

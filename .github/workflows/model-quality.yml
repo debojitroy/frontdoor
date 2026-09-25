@@ -1,0 +1,15 @@
+name: Model quality
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  frozen-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.14"
+      - run: uv sync --frozen --python 3.13
+      - name: Recompute the unchanged quality gates
+        run: uv run python scripts/benchmark.py --verify evals/specialist.json --quality

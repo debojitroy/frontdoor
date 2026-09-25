@@ -1,0 +1,412 @@
+[
+  {
+    "id": "phish-0003",
+    "group": "45994d73abbdfea59ae329376c6ffe055bdcd5cd195ca20fbaaa194740eaf06b",
+    "message": {
+      "subject": "Unusual Activity Detected",
+      "body": "Suspicious login from Russia. Reset password now: https://g00gle-security.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0006",
+    "group": "f95bf17b180b286f2570ebb2f2d06616d9a8f8f1800b2366257446cf7478a4c0",
+    "message": {
+      "subject": "Security Alert: Account Compromised",
+      "body": "Your social media account was accessed from China. Secure it: https://fb-security.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0009",
+    "group": "cd350f0099ec77db9bde82c147c2a8052f301e4ac409427456448b0b9ffb8095",
+    "message": {
+      "subject": "CEO Request: Urgent Wire Transfer",
+      "body": "Please process a $10,000 transfer by EOD. Details in attached PDF.",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0016",
+    "group": "15a7e2b932110145175e54130403d4f0aa9f24ec4a02fca8499e1c826a4b410c",
+    "message": {
+      "subject": "Your Account Needs Attention",
+      "body": "Unusual activity detected. Secure your account: https://paypa1-login.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0018",
+    "group": "8907293b1c7c2752de328592a4835601023a1e221c5805b3a475f8236842fe60",
+    "message": {
+      "subject": "Legal Notice: Action Required",
+      "body": "You are summoned for a legal matter. View details: https://court-notice.org",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0024",
+    "group": "e7f4b458f1cdb2a7d59f56c45981ee4c7c465667f0a7c6b0c99374f02f147a5c",
+    "message": {
+      "subject": "Urgent: Data Breach Alert",
+      "body": "Your data may be compromised. Secure now: https://datasecure-alert.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0028",
+    "group": "e1c5083028615c268ce4b4391609e5eab09507d60907fd1c0b5a0a5a093ce0b3",
+    "message": {
+      "subject": "Survey: Win a Prize",
+      "body": "Complete our survey for a chance to win: https://survey-rewards.net",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0036",
+    "group": "454465bf24eeb1908e28dbb6e95a6d3629c73b2be5bd2b8ca86d93848a600d3c",
+    "message": {
+      "subject": "Account Upgrade Required",
+      "body": "Upgrade your account to avoid suspension: https://1inkedin-upgrade.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0037",
+    "group": "688612d442bb62c78a45af8d415d06fc7b469348809a65cb87a5839283fc063c",
+    "message": {
+      "subject": "Investment Opportunity",
+      "body": "Invest in our startup for high returns: https://invest-scam.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0046",
+    "group": "e04716755489278616cc0c7b91893bcb2dea72284fb0542d3a0f782e90a00fe9",
+    "message": {
+      "subject": "Account Review Required",
+      "body": "Your account needs review. Verify: https://amaz0n-account.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "legit-005",
+    "group": "a36d4ac010ae5010a3762874f8cee4954e4de2c6c7e7a63fdf5e67b4c54c5da2",
+    "message": {
+      "subject": "Your Subscription Renewal",
+      "body": "Your Netflix plan has been renewed. View billing details in your account.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-010",
+    "group": "b9d283e83bc3d6c243518561427da04c0341f3339897dc31f94e93ebf7035e2b",
+    "message": {
+      "subject": "Project Update",
+      "body": "The Q2 project report is available in the shared drive. Review by EOD.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-016",
+    "group": "1259653d760ed630a7090b40b5691605566cf99c4ddff42fe493cdebe35cb88f",
+    "message": {
+      "subject": "Weekly Team Sync",
+      "body": "Reminder: Weekly sync at 2 PM tomorrow. Agenda shared in Slack.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-019",
+    "group": "c253665f85ba7228ce08ba13e74a8148bf3ab983791bea35b21f547824d904f4",
+    "message": {
+      "subject": "Your Donation Receipt",
+      "body": "Thank you for your $50 donation. Your receipt is attached.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-023",
+    "group": "c6d3a2fcfadb95513202a3bcefef5b41c1fdd58652819356516d221ac86dd874",
+    "message": {
+      "subject": "Upcoming Webinar",
+      "body": "Join our webinar on AI trends on 5/25 at 3 PM. Register now.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-025",
+    "group": "ebd2b836dcf30402c44c60a88be0be1bbf38b214ab00a034efdaf61f6a14f7bb",
+    "message": {
+      "subject": "Account Settings Updated",
+      "body": "Your profile was updated. Contact support if you didn\u2019t make this change.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-027",
+    "group": "6d7f9ac679c7fb99df9568a4d127617663e5a4fa763fb747a7845b57faaf1aae",
+    "message": {
+      "subject": "Order Delivered #54321",
+      "body": "Your order was delivered today. Contact us for any issues.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-030",
+    "group": "b92b2ced448e566aba6cdf844d88cbd5ffa8321f370bfdc295352c28c61c1664",
+    "message": {
+      "subject": "Team Outing Details",
+      "body": "Join us for the team outing on 6/5. RSVP by 5/28.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-038",
+    "group": "42a1eca0dcb68a257f7e379039fa3cb696675486a14c4b470a7049dd09eb0be3",
+    "message": {
+      "subject": "Your Booking Confirmation",
+      "body": "Your hotel booking for 6/1-6/3 is confirmed. View details online.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-039",
+    "group": "1ac95542c50784de108271f1b8a100800d7c573125ae730b6b1d5462638d2271",
+    "message": {
+      "subject": "Account Activity Notice",
+      "body": "Recent login to your account was successful. Review activity in settings.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-042",
+    "group": "65bfec153e534adf19e1727a306f051acce62ed6cd23c4b30a5ac3c0f9c9405d",
+    "message": {
+      "subject": "Training Session Reminder",
+      "body": "Mandatory training session on 5/23 at 11 AM. Details in email.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-045",
+    "group": "6a72fe19a9c2ac033313ca5491227a3f5ae66b4ef81f028abb6ee39cac74b139",
+    "message": {
+      "subject": "Your Order Update",
+      "body": "Your order #78901 is being processed. Expect shipping soon.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "phish-0052",
+    "group": "9c039f96f68a9fe1c45e1ee8a30aa02d17588cf42a5d64b37e16eab608935c06",
+    "message": {
+      "subject": "Overdue Invoice #7832",
+      "body": "Download your invoice and settle payment: [attachment: invoice.pdf]",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0058",
+    "group": "44db4f03294791823cb9dfbfe9f47467d43bf83c91c96040a2caab116c742056",
+    "message": {
+      "subject": "Insurance Plan Renewal",
+      "body": "Renew your plan to avoid cancellation: https://heathcare-plan.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0059",
+    "group": "bc77219430f295334421ec5b43056e70367d444054584f07fe526b0a80bfa2e3",
+    "message": {
+      "subject": "Urgent CEO Request",
+      "body": "Transfer $15,000 to new vendor. Details: [attachment: payment.doc]",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0060",
+    "group": "2391d7f846b80f99b6a0bbbe300c95bce76dd2e58913dbfd851800dae29cd488",
+    "message": {
+      "subject": "Cloud Storage Full",
+      "body": "Upgrade your storage now: https://dr0pbox-upgrade.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0064",
+    "group": "ebfdb964928747d2589736cd2f62c207acfdfb6dbe17fa2f9aa1bde8f85785b0",
+    "message": {
+      "subject": "Email Account Lockout",
+      "body": "Verify your email to avoid deactivation: https://0utlook-verify.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0066",
+    "group": "b78881785bd5c5ece6f2e1f0f6b4e0b61a5a668b8a787ae467cb80307802b43c",
+    "message": {
+      "subject": "Payment Account Issue",
+      "body": "Secure your account: https://paypa1-secure.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0067",
+    "group": "c312f492c2a44b820d3d07570ff26706f46174ecf4aca7bf741d4969af0c25f1",
+    "message": {
+      "subject": "Free VPN Software",
+      "body": "Install our free VPN: [attachment: vpn_install.exe]",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0070",
+    "group": "7ceab5eb251354e5b308748964aeebd5578e305a3ebc5f486db3c84d05f40e07",
+    "message": {
+      "subject": "HR Policy Update",
+      "body": "Review new policy: [attachment: hr_policy.pdf]",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0079",
+    "group": "3f69abc24d3b7308191b4a9b32cdca222bd27874d22ddda349a8b7f476ea722e",
+    "message": {
+      "subject": "System Update Urgent",
+      "body": "Install update now: [attachment: update.exe]",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0090",
+    "group": "4177810a6d30819acdaffdf31a770168c1af93f4574fdd34b09242b786650432",
+    "message": {
+      "subject": "Account Compromised",
+      "body": "Secure now: https://tw1tter-security.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "phish-0100",
+    "group": "0f45a465b0c939bb786d6dc19434c8eabdf53c4ebf44545a24652cb48545a3bf",
+    "message": {
+      "subject": "Free Storage Offer",
+      "body": "Get 1TB free: https://c1oud-storage.com",
+      "context": ""
+    },
+    "expected": true
+  },
+  {
+    "id": "legit-051",
+    "group": "24560fb1b5e597287fb7e32a45f39056d8c426d88210033798a2e79c7e3db4c3",
+    "message": {
+      "subject": "Your Subscription Confirmation",
+      "body": "Your annual subscription to Adobe Acrobat is confirmed. View details online.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-052",
+    "group": "39b5add4d413299a590decfbd85aeb22fc429ae211995abe687a4bc7c378e0af",
+    "message": {
+      "subject": "Weekly Project Update",
+      "body": "The latest project status report is available in the shared folder.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-055",
+    "group": "93278edc8a43e1576d614154e44004dea3e16e8df2c8da4d99c5828187b2c341",
+    "message": {
+      "subject": "Your Hulu Plan Renewal",
+      "body": "Your Hulu subscription has been renewed. Check billing in your account.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-057",
+    "group": "79477889bca1fb573a4a9fd14b716ef33e50b34ae9f2c882ec697fb637231c5d",
+    "message": {
+      "subject": "Flight Check-In Reminder",
+      "body": "Check in for your flight to London, departing 5/21/2025.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-075",
+    "group": "b87ccb531392dc4324ebc402a2dfb7a90cdc70440cde2d25b00bdbf25d0f9ea7",
+    "message": {
+      "subject": "Profile Update Confirmation",
+      "body": "Your Instagram profile was updated. Contact us if unintended.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-076",
+    "group": "333e864c6887270b7b9ac7e2a2f94740471d240e596cb5008d3005ecaaf221e9",
+    "message": {
+      "subject": "Monthly Sales Report",
+      "body": "Your May sales report is ready in the analytics dashboard.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-082",
+    "group": "d634dcb6a5b3bfacceccd53b260be9db021f7fd8edcd20646fdbffcf03b359b3",
+    "message": {
+      "subject": "Product Feature Update",
+      "body": "New features added to your software. View the changelog.",
+      "context": ""
+    },
+    "expected": false
+  },
+  {
+    "id": "legit-099",
+    "group": "75379098e921c85828d53c9c3125dc21111d9ccebc2098a8941529b510010dfe",
+    "message": {
+      "subject": "Plan Upgrade Confirmation",
+      "body": "Your plan was upgraded. Access new features now.",
+      "context": ""
+    },
+    "expected": false
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "version": "frontdoor-eval-v1",
+  "model_revision": "55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851",
+  "public_sms_cases": 200,
+  "public_sms_split": "Normalized-message hash buckets: 0-6 train, 7 validation, 8-9 test. First 100 ham and 100 spam test records ordered by group hash.",
+  "public_sms_source": "UCI SMS Spam Collection, doi:10.24432/C5CC84",
+  "public_sms_license": "CC BY 4.0",
+  "public_sms_limit": "Old public English SMS data; unknown overlap with Laya training. Not a phishing benchmark or proof of unseen-source generalization.",
+  "challenge_limit": "Original authored email/form/community messages, labels frozen before inference but not independently reviewed.",
+  "thresholds": {
+    "minimum_sms_spam_f1": 0.9,
+    "maximum_sms_false_positive_rate": 0.05,
+    "minimum_challenge_accuracy": 0.85,
+    "minimum_challenge_phishing_recall": 0.9
+  },
+  "rules": [
+    "Preserve all failures and keep failed predictions in denominators.",
+    "Do not tune prompts or thresholds on the test set.",
+    "Report public SMS and authored challenges separately.",
+    "Do not interpret raw probability as calibrated correctness.",
+    "Bedrock comparison is offline only; it never supplies Laya predictions.",
+    "No real message delivery or security enforcement occurs in the demo."
+  ]
+}
