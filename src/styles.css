@@ -108,50 +108,6 @@ svg {
   grid-template-columns: 238px minmax(0, 1fr);
   min-height: 100vh;
 }
-.sidebar {
-  overflow-y: auto;
-  background: #18211f;
-  color: #e5ece5;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 31px 20px 22px;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-family: "Manrope Variable", sans-serif;
-  font-weight: 800;
-  font-size: 25px;
-  letter-spacing: -1.5px;
-  padding-left: 5px;
-}
-.brand-icon {
-  display: flex;
-  color: var(--peach);
-}
-.brand-period {
-  color: var(--peach);
-  margin-left: -8px;
-}
-.workspace-label {
-  margin: 46px 13px 16px;
-  color: #a5b1a7;
-  font-size: 10px;
-  letter-spacing: 1.8px;
-  display: flex;
-  justify-content: space-between;
-}
-.workspace-label span {
-  color: #c0ccc0;
-}
-.sidebar nav {
-  display: grid;
-  gap: 7px;
-}
 .nav-item {
   padding: 13px 14px;
   border-radius: 7px;
@@ -184,71 +140,10 @@ svg {
   background: #c8d6c8;
   color: #213b2e;
 }
-.sidebar-story {
-  border-top: 1px solid #354039;
-  margin: 33px 12px 0;
-  padding-top: 27px;
-}
 .tiny-label {
   font-size: 9px;
   letter-spacing: 1.2px;
   font-weight: 600;
-}
-.sidebar-story .tiny-label {
-  color: #acb9ad;
-}
-.sidebar-story p {
-  font-family: "Manrope Variable", sans-serif;
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: -0.5px;
-  color: #f2efdf;
-  margin-top: 14px;
-}
-.door-illustration {
-  height: 125px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 22px;
-}
-.door-illustration i {
-  position: absolute;
-  bottom: 0;
-  left: 22px;
-  width: 105px;
-  height: 119px;
-  border: 1px solid #5b6c5f;
-  border-bottom: 0;
-  border-radius: 55px 55px 0 0;
-  transform: skewY(-8deg);
-}
-.door-illustration i:nth-child(2) {
-  left: 38px;
-  height: 112px;
-  border-color: #728674;
-}
-.door-illustration i:nth-child(3) {
-  left: 55px;
-  height: 105px;
-  background: linear-gradient(120deg, #ccbea2, #385a41);
-  border: 0;
-}
-.door-illustration b {
-  position: absolute;
-  right: 12px;
-  bottom: 29px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--peach);
-  color: #26362d;
-  text-align: center;
-  line-height: 32px;
-  font-size: 22px;
-}
-.sidebar-bottom {
-  margin-top: auto;
-  padding-top: 26px;
 }
 .powered {
   display: flex;
@@ -293,25 +188,6 @@ svg {
 }
 .powered .model-mark {
   color: var(--peach);
-}
-.sidebar-bottom > a,
-.sidebar-bottom > button {
-  display: flex;
-  width: 100%;
-  gap: 9px;
-  align-items: center;
-  background: none;
-  color: #aebbb1;
-  padding: 9px 12px;
-  font-size: 11px;
-  text-align: left;
-}
-.sidebar-bottom > a svg:last-child {
-  margin-left: auto;
-}
-.sidebar-bottom > a:hover,
-.sidebar-bottom > button:hover {
-  color: white;
 }
 main {
   min-width: 0;
@@ -1698,12 +1574,6 @@ dialog form {
   .app-shell {
     grid-template-columns: 205px minmax(0, 1fr);
   }
-  .sidebar {
-    padding: 27px 14px 19px;
-  }
-  .brand {
-    font-size: 23px;
-  }
   .nav-item {
     font-size: 11px;
     padding: 12px 10px;
@@ -1795,38 +1665,10 @@ dialog form {
   .desk-footer {
     font-size: 7px;
   }
-  .sidebar-story p {
-    font-size: 18px;
-  }
 }
 @media (max-width: 930px) {
   .app-shell {
     grid-template-columns: 76px minmax(0, 1fr);
-  }
-  .sidebar {
-    padding: 24px 12px;
-  }
-  .brand {
-    font-size: 0;
-    gap: 0;
-    padding: 0;
-    justify-content: center;
-  }
-  .brand-period {
-    display: none;
-  }
-  .brand-icon svg {
-    width: 29px;
-    height: 29px;
-  }
-  .workspace-label,
-  .sidebar-story,
-  .sidebar-bottom {
-    display: none;
-  }
-  .sidebar nav {
-    margin-top: 45px;
-    gap: 12px;
   }
   .nav-item {
     justify-content: center;
@@ -2062,32 +1904,6 @@ dialog form {
 @media (max-width: 480px) {
   .app-shell {
     display: block;
-  }
-  .sidebar {
-    height: auto;
-    position: static;
-    padding: 15px 18px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-  }
-  .brand {
-    font-size: 20px;
-    gap: 6px;
-  }
-  .brand-period {
-    display: inline;
-    margin-left: -6px;
-  }
-  .brand-icon svg {
-    width: 23px;
-    height: 23px;
-  }
-  .sidebar nav {
-    display: flex;
-    gap: 2px;
-    margin: 0;
   }
   .nav-item {
     min-height: 34px;

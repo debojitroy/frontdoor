@@ -32,6 +32,7 @@ import type {
   Suite,
 } from "./types";
 import "./styles.css";
+import "./identity.css";
 
 type Page = "desk" | "review" | "lab" | "evaluation";
 const labels: Record<Label, string> = {
@@ -170,18 +171,29 @@ function App() {
       <a href="#main" className="skip-link">
         Skip to content
       </a>
-      <aside className="sidebar">
-        <a className="brand" href="#desk" onClick={() => setPage("desk")}>
-          <span className="brand-icon">
-            <DoorOpen size={25} />
-          </span>
-          frontdoor<span className="brand-period">.</span>
+      <header className="post-header">
+        <a className="post-brand" href="#desk" onClick={() => setPage("desk")}>
+          frontdoor<span>THE CORRESPONDENCE ROOM</span>
         </a>
-        <div className="workspace-label">
-          WORKSPACE <span>01</span>
+        <div className="post-intro">
+          A place for messages.
+          <br />A second opinion on what they mean.
         </div>
+        <svg className="postmark" viewBox="0 0 220 100" aria-hidden="true">
+          <circle cx="54" cy="50" r="42" />
+          <circle cx="54" cy="50" r="35" />
+          <text x="54" y="43" textAnchor="middle">
+            LOCAL
+          </text>
+          <text x="54" y="62" textAnchor="middle">
+            LAYA
+          </text>
+          <path d="M101 28q15-10 30 0t30 0t30 0t30 0M101 43q15-10 30 0t30 0t30 0t30 0M101 58q15-10 30 0t30 0t30 0t30 0M101 73q15-10 30 0t30 0t30 0t30 0" />
+        </svg>
+      </header>
+      <div className="post-navigation">
         <nav aria-label="Main navigation">
-          {nav.map(([key, label, icon]) => (
+          {nav.map(([key, label], index) => (
             <button
               key={key}
               className={`nav-item ${page === key ? "active" : ""}`}
@@ -192,7 +204,9 @@ function App() {
               }}
               aria-current={page === key ? "page" : undefined}
             >
-              {icon}
+              <span className="post-tab-number" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
               <span>{label}</span>
               {key === "review" && (
                 <span className="nav-count">{review.length}</span>
@@ -200,28 +214,7 @@ function App() {
             </button>
           ))}
         </nav>
-        <div className="sidebar-story">
-          <span className="tiny-label">SMALL MODEL. REAL DECISIONS.</span>
-          <p>
-            A little intelligence
-            <br />
-            at the entrance.
-          </p>
-          <div className="door-illustration" aria-hidden="true">
-            <i />
-            <i />
-            <i />
-            <b>↗</b>
-          </div>
-        </div>
-        <div className="sidebar-bottom">
-          <div className="powered">
-            <ModelMark />
-            <span>
-              Powered by <strong>Laya</strong>
-              <small>Local, non-generative inference</small>
-            </span>
-          </div>
+        <div className="post-links">
           <a
             href="https://github.com/debojitroy/frontdoor"
             target="_blank"
@@ -233,7 +226,7 @@ function App() {
             <CircleHelp size={15} /> About this experiment
           </button>
         </div>
-      </aside>
+      </div>
       <main id="main">
         <header className="topbar">
           <span>
@@ -267,15 +260,19 @@ function App() {
           <>
             <section className="page-heading">
               <div>
-                <span className="eyebrow">THE MESSAGE WORKBENCH</span>
+                <span className="eyebrow">
+                  {page === "desk"
+                    ? "01 / INCOMING CORRESPONDENCE"
+                    : "02 / HUMAN REVIEW"}
+                </span>
                 <h1>
                   {page === "desk"
-                    ? "Every message. A closer look."
-                    : "Good judgment needs a second look."}
+                    ? "The sorting desk."
+                    : "Needs another look."}
                 </h1>
                 <p>
                   {page === "desk"
-                    ? "Spam, phishing, or a welcome arrival? See what Laya sees."
+                    ? "Open a message. Read the model’s decision. Make your own call."
                     : "Inspect the decision. Add your correction. Keep the original evidence."}
                 </p>
               </div>
@@ -861,7 +858,7 @@ function ModelLab({
       <section className="page-heading">
         <div>
           <span className="eyebrow">FROM BASE MODEL TO SPECIALIST</span>
-          <h1>Teach the entrance your policy.</h1>
+          <h1>The training notebook.</h1>
           <p>
             A small, supervised experiment. Every example, checkpoint, and
             result accounted for.
@@ -1123,7 +1120,7 @@ function EvaluationView({ evaluation: e }: { evaluation: Evaluation }) {
       <section className="page-heading">
         <div>
           <span className="eyebrow">EVIDENCE, INCLUDING THE EXCEPTIONS</span>
-          <h1>Show your working.</h1>
+          <h1>The evaluation record.</h1>
           <p>
             Fixed examples. Real model outputs. Recomputed scores. No hidden
             failures.

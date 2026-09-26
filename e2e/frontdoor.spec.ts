@@ -6,7 +6,7 @@ test("stream, inspect, review, export and reload without changing the model deci
 }) => {
   await page.goto("/");
   await expect(
-    page.getByRole("heading", { name: "Every message. A closer look." }),
+    page.getByRole("heading", { name: "The sorting desk." }),
   ).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Live inference", exact: true }),
@@ -64,7 +64,7 @@ test("model lab and failure explorer expose the measured limitations", async ({
   await page.goto("/");
   await page.getByRole("button", { name: "Model lab" }).click();
   await expect(
-    page.getByRole("heading", { name: "Teach the entrance your policy." }),
+    page.getByRole("heading", { name: "The training notebook." }),
   ).toBeVisible();
   await expect(
     page.getByText("3 of 5 frozen quality checks pass"),
@@ -73,7 +73,7 @@ test("model lab and failure explorer expose the measured limitations", async ({
     .getByRole("button", { name: "Inspect the full evaluation" })
     .click();
   await expect(
-    page.getByRole("heading", { name: "Show your working." }),
+    page.getByRole("heading", { name: "The evaluation record." }),
   ).toBeVisible();
   await expect(page.getByText("13 cases", { exact: true })).toBeVisible();
   await page.getByLabel("Show failures only").uncheck();
@@ -94,9 +94,17 @@ test("keyboard dialog and responsive layout stay usable", async ({ page }) => {
   await expect(page.getByRole("dialog")).not.toBeVisible();
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: 900 });
+    const tabLabel = page
+      .getByRole("navigation", { name: "Main navigation" })
+      .getByText("Screening desk", { exact: true });
+    expect(
+      await tabLabel.evaluate(
+        (element) => element.getBoundingClientRect().width,
+      ),
+    ).toBeGreaterThan(30);
     await page.getByRole("button", { name: "Evaluation", exact: true }).click();
     await expect(
-      page.getByRole("heading", { name: "Show your working." }),
+      page.getByRole("heading", { name: "The evaluation record." }),
     ).toBeVisible();
     expect(
       await page.evaluate(

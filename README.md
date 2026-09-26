@@ -1,6 +1,6 @@
 # FrontDoor
 
-**A little intelligence at the entrance.**
+**The correspondence room.**
 
 A full-stack message screening workbench built around [Laya](https://laya-ai.com/). Replay real predictions, edit a message and run fresh local inference, review decisions, and inspect the experiments behind them.
 
@@ -8,6 +8,8 @@ A full-stack message screening workbench built around [Laya](https://laya-ai.com
 [![Model quality](https://github.com/debojitroy/frontdoor/actions/workflows/model-quality.yml/badge.svg)](https://github.com/debojitroy/frontdoor/actions/workflows/model-quality.yml)
 
 ![FrontDoor screening desk](docs/desk.png)
+
+The interface uses file tabs, perforated message slips, and an open-letter reading pane. A separate review record preserves the model's original decision. Desktop and mobile layouts share the same labeled navigation, and fonts are served locally.
 
 ## The finding
 
